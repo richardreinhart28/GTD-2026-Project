@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+body{
+  background-color:#e5e5e5;
+}
+
+.App {
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 20px auto;
+}
+
+.box{
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 400px;
+    display: inline-block;
+}
+
+.box h3 {
+  margin-top: 0;
+  font-size: 24px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+input{
+  width: 100%;
+  max-width: 85%;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  height: 30px;
+  padding: 12px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: vertical;
+  height: 45px;
+}
+
+textarea{
+  width: 100%;
+  max-width: 85%;
+  margin-bottom: 20px;
+  border: 1px solid #d0cece;
+  height: 30px;
+  padding: 12px;
+  border-radius: 3px;
+  height: 60px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.task-name, .task-desc {
+  background-color: #fff;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.label-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  padding: 5px 30px;
+}
+
+.date-input {
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  width: 40%;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  max-width: 75%;
+  white-space: nowrap;
+  margin-top: 0;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 15px;
+  height: 15px;
+  white-space: nowrap;
+}
+
+.radio-label input {
+  margin: 0;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #2970d9;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #0055ff;
+}
+
+.filter-sect {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.filter-sect h3 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.filter-label input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.task-list-box {
+  width: 97%;
+  margin: 0 auto 50px auto;
+}
+
+.task-item {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.task-desc h4 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  text-align: left;
+
+}
+
+.task-desc p {
+  margin: 0 0 5px 0;
+  color: #666;
+  font-size: 18px;
+  text-align: left;
+}
+
+.task-info {
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.task-info span{
+  margin: 0 0 5px 0;
+  display: block;
+  color: #666;
+}
+
+.task-action {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.edit-btn {
+  background-color: #2970d9;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: #0055ff;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.task-item.edit-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edit-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.edit-inputs label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.edit-inputs input, .edit-inputs textarea, .edit-inputs select {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn, .cancel-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.save-btn {
+  background-color: #2970d9;
+  transition: background-color 0.2s ease;
+}
+
+.save-btn:hover {
+  background-color: #0055ff;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    transition: background-color 0.2s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f;
+}
